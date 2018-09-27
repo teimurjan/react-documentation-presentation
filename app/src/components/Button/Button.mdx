@@ -1,0 +1,34 @@
+---
+name: Button
+route: /button
+---
+
+import { Playground, PropsTable } from 'docz'
+import Button from './'
+import OutlinedButton from './OutlinedButton'
+
+# Button
+
+## Default
+<PropsTable of={Button} />
+
+<Playground>
+  <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+    <Button>Button</Button>
+    <Button type="info">Button</Button>
+    <Button type="warning">Button</Button>
+    <Button type="danger">Button</Button>
+  </div>
+</Playground>
+
+## Outlined
+<PropsTable of={OutlinedButton} />
+
+<Playground>
+  <div style={{ display: 'flex', justifyContent: 'space-around' }}> 
+    <OutlinedButton>Button</OutlinedButton>
+    <OutlinedButton type="info">Button</OutlinedButton>
+    <OutlinedButton type="warning">Button</OutlinedButton>
+    <OutlinedButton type="danger">Button</OutlinedButton>
+  </div>
+</Playground>

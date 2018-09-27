@@ -1,0 +1,45 @@
+{
+  "config": {
+    "title": "DevFest'18",
+    "description": "My awesome app using docz",
+    "themeConfig": {
+      "colors": {
+        "primary": "tomato"
+      }
+    },
+    "ordering": "descending",
+    "version": "0.1.0",
+    "repository": null,
+    "native": false,
+    "base": "/button"
+  },
+  "entries": {
+    "src/components/Button/Button.mdx": {
+      "name": "Button",
+      "route": "/button",
+      "id": "2b773349a016959194c905ce6ad9d2d4",
+      "filepath": "src/components/Button/Button.mdx",
+      "link": null,
+      "slug": "src-components-button-button",
+      "order": 0,
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "button",
+          "value": "Button"
+        },
+        {
+          "depth": 2,
+          "slug": "default",
+          "value": "Default"
+        },
+        {
+          "depth": 2,
+          "slug": "outlined",
+          "value": "Outlined"
+        }
+      ]
+    }
+  }
+}
