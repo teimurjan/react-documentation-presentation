@@ -1,16 +1,15 @@
 import React from "react";
-import { storiesOf, addDecorator } from "@storybook/react";
+import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import Button from "./index";
 import OutlinedButton from "./OutlinedButton";
 
-addDecorator(storyFn => (
-  <div style={{ display: "flex", justifyContent: "space-around" }}>
-    {storyFn()}
-  </div>
-));
-
 storiesOf("Button", module)
+  .addDecorator(storyFn => (
+    <div style={{ display: "flex", justifyContent: "space-around" }}>
+      {storyFn()}
+    </div>
+  ))
   .add("Default", () => (
     <React.Fragment>
       <Button onClick={action("primary clicked")}>Button</Button>
@@ -27,7 +26,9 @@ storiesOf("Button", module)
   ))
   .add("Outlined", () => (
     <React.Fragment>
-      <OutlinedButton onClick={action("primary clicked")}>Button</OutlinedButton>
+      <OutlinedButton onClick={action("primary clicked")}>
+        Button
+      </OutlinedButton>
       <OutlinedButton type="info" onClick={action("info clicked")}>
         Button
       </OutlinedButton>

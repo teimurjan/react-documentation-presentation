@@ -14,13 +14,13 @@
     "base": "/button"
   },
   "entries": {
-    "src/components/Button/Button.mdx": {
+    "src/components/Button/index.mdx": {
       "name": "Button",
       "route": "/button",
-      "id": "2b773349a016959194c905ce6ad9d2d4",
-      "filepath": "src/components/Button/Button.mdx",
+      "id": "a08e664b64d63394cab05b2e5d624522",
+      "filepath": "src/components/Button/index.mdx",
       "link": null,
-      "slug": "src-components-button-button",
+      "slug": "src-components-button-index",
       "order": 0,
       "menu": null,
       "headings": [
